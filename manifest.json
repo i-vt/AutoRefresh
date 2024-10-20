@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+  "name": "Auto Refresh Tabs",
+  "version": "1.0",
+  "description": "Refresh all tabs every 5 minutes with a toggle option.",
+  "permissions": [
+    "tabs",
+    "storage"
+  ],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_title": "Auto Refresh Toggle"
+  },
+  "icons": {
+    "48": "icon.png"
+  }
+}
+
