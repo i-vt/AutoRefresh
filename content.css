@@ -1,0 +1,10 @@
+#refreshToggle {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+label {
+  cursor: move; /* Change the cursor to indicate draggable label */
+}
+

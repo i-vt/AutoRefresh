@@ -1,15 +1,23 @@
 {
   "manifest_version": 2,
-  "name": "Auto Refresh",
-  "version": "1.0",
-  "description": "Refresh all tabs every 5 minutes with a toggle option.",
+  "name": "Auto Refresh Tabs",
+  "version": "1.3",
+  "description": "Refresh tabs with a movable exclude checkbox.",
   "permissions": [
     "tabs",
-    "storage"
+    "storage",
+    "activeTab"
   ],
   "background": {
     "scripts": ["background.js"]
   },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["content.css"]
+    }
+  ],
   "browser_action": {
     "default_popup": "popup.html",
     "default_title": "Auto Refresh Toggle"
