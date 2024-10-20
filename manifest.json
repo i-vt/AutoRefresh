@@ -1,6 +1,6 @@
 {
   "manifest_version": 2,
-  "name": "Auto Refresh Tabs",
+  "name": "Auto Refresh",
   "version": "1.0",
   "description": "Refresh all tabs every 5 minutes with a toggle option.",
   "permissions": [
